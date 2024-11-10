@@ -11,15 +11,15 @@
 // +----------------------------------------------------------------------
 
 return [
-// 生成应用公共文件
-    '__file__' => [],
-    // 定义demo模块的自动生成 （按照实际定义的文件名生成）
-    'demo'     => [
-        '__file__'   => ['common.php'],
-        '__dir__'    => ['behavior', 'controller', 'model', 'view'],
-        'controller' => ['Index', 'Test', 'UserType'],
-        'model'      => ['User', 'UserType'],
-        'view'       => ['index/index'],
+    //别名配置,别名只能是映射到控制器且访问时必须加上请求的方法
+    '__alias__'   => [
     ],
-        // 其他更多的模块定义
+    //变量规则
+    '__pattern__' => [
+    ],
+//        域名绑定到模块
+//        '__domain__'  => [
+//            'admin' => 'admin',
+//            'api'   => 'api',
+//        ],
 ];
